@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+
+ width: 100%;
+ height: 100vh;
+ background-image:linear-gradient(rgb(0, 0, 0.85),rgba(0, 0, 0, 0.85)),url(IMG_2069.PNG);
+ background-size: cover;
+ background-position: center;
+}
+.navbar{
+
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+.navbar ul li  a{
+
+    text-decoration: none;
+    color:#d4d3d0;
+    font-family: sans-serif;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #f7e017;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.tittle{
+    font-size: 70px;
+    line-height: 100px;
+    font-weight: bold;
+    height: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.content p{
+    margin: auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: sans-serif;
+    
+}
+button{
+    padding: 15px 25px;
+    margin: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 2px solid #f7e017;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(to right,transparent 50%,#ffc107 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.5s;
+    
+}
+button:hover{
+    background-position: right;
+    color:#000;
+    
+
+}
+.slider{
+    color: #f7e017;
+    margin-left:  12px;
+    box-sizing: border-box;
+    animation: slider 6s linear infinite;
+
+}
+@keyframes slider {
+    0%{margin-top: -400px; }
+    5%{ margin-top: -200px;}
+    30%{margin-top: -200px;} 
+    35%{margin-top: 0px; } 
+    65%{margin-top: 0px; } 
+    70%{margin-top: 200px;}
+    100%{margin-top: 200px;}  
+
+  
+} 
